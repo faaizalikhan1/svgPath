@@ -1,2 +1,2 @@
 # svgStrokes
-Find array and offset lengths for your svg path
+A tool to find the length of your svg path

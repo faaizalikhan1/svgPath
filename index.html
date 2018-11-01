@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="index.js"></script>
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            height:100%;
+            width:100%;
+        }
+
+div{
+    width:50%;
+    min-height:60%;
+    border:2px solid;
+}
+
+svg{
+    width:100%;
+    height:100%;
+}
+
+        code{
+            border:1px solid coral;
+            font-weight: bold;
+        }
+
+        code::before{
+            content: "<";
+        }
+
+        code::after{
+            content:">";
+        }
+
+        #outputtwo{
+            box-sizing: border-box;
+            color:royalblue;
+            padding:5%;
+        }
+    </style>
+    <title>SVG</title>
+</head>
+
+<body>
+    <ul>
+        <li>Enter the path code (<b>*Please make sure the code contains the <code>path</code> tag</b>)</li>
+        <li>Hit the button to get the path!</li>
+    </ul>
+    <input id="path" type="text" name="path" placeholder="Enter the code!">
+
+    <button id="submit">Get path length!</button>
+
+
+    <div>
+        <svg id="output-area"></svg>
+    </div>
+    <span id="outputtwo"></span>
+
+    
+</body>
+
+</html>
